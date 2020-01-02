@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./Css/all.css">
+    <link rel="stylesheet" href="./Css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+
+    <!--*****************************************************************-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses'],
+          ['2004',  1000,      400],
+          ['2005',  1170,      460],
+          ['2006',  660,       1120],
+          ['2007',  1030,      540]
+        ]);
+
+        var options = {
+            backgroundColor:'#57AF5B',
+          title: 'Company Performance',
+          curveType: 'function',
+          legend: { position: 'bottom'
+           },
+           
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <!--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Director (Year)',  'Rotten Tomatoes', 'IMDB'],
+          ['Alfred Hitchcock (1935)', 8.4,         7.9],
+          ['Ralph Thomas (1959)',     6.9,         6.5],
+          ['Don Sharp (1978)',        6.5,         6.4],
+          ['James Hawes (2008)',      4.4,         6.2]
+        ]);
+
+        var options = {
+            backgroundColor: '#FEA422',
+          title: 'The decline of \'The 39 Steps\'',
+          vAxis: {title: 'Accumulated Rating'},
+          isStacked: true
+        };
+
+        var chart = new google.visualization.SteppedAreaChart(document.getElementById('chart_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+        <!--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&-->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+          google.charts.load("current", {packages:["corechart"]});
+          google.charts.setOnLoadCallback(drawChart);
+          function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+              ['Age', 'Weight'],
+              [ 8,      12],
+              [ 4,      5.5],
+              [ 11,     14],
+              [ 4,      5],
+              [ 3,      3.5],
+              [ 6.5,    7]
+            ]);
+     
+            var options = {
+                backgroundColor:'#E8413D',
+              title: 'Age vs. Weight comparison',
+              legend: 'none',
+              crosshair: { trigger: 'both', orientation: 'both' },
+              trendlines: {
+                0: {
+                  type: 'polynomial',
+                  degree: 3,
+                  visibleInLegend: true,
+                }
+              }
+            };
+     
+            var chart = new google.visualization.ScatterChart(document.getElementById('polynomial2_div'));
+            chart.draw(data, options);
+          }
+        </script>
+         <!--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&-->
+</head>
+<body>
+    <main>
+        <div class="back">
+        <div class="div1">
+                <h3 class="h1">CREATIVE TIM</h3>
+                <hr>
+            <ul class="List">
+                <li class="a1">
+                    <div class="div2">
+                            <span class="fas fa-chart-line ic"></span>
+                            <h3 class="item">Dashboard</h3>
+                    </div>
+                </li>
+            </ul>
+            <!--*************************************************************-->
+            <ul class="List">
+                    <li class="a1">
+                        <div class="div2">
+                                <span class="fas fa-user ic"></span>
+                                <h3 class="item">User Profile</h3>
+                        </div>
+                    </li>
+                </ul>
+                <!--*************************************************************-->
+                <ul class="List">
+                        <li class="a1">
+                            <div class="div2">
+                                <span class="far fa-clipboard ic"></span>
+                                    <h3 class="item">Table list</h3>
+                            </div>
+                        </li>
+                    </ul>
+                    <!--*************************************************************-->
+                    <ul class="List">
+                            <li class="a1">
+                                <div class="div2">
+                                    <span class="far fa-file-alt ic"></span>
+                                        <h3 class="item">Typography</h3>
+                                </div>
+                            </li>
+                        </ul>
+                        <!--*************************************************************-->
+                        <ul class="List">
+                                <li class="a1">
+                                    <div class="div2">
+                                        <span class="fas fa-check-circle ic"></span>
+                                            <h3 class="item">Icons</h3>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!--*************************************************************-->
+                            <ul class="List">
+                                    <li class="a1">
+                                        <div class="div2">
+                                                <span class="fas fa-map-marker-alt ic"></span>
+                                                <h3 class="item">Map</h3>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!--*************************************************************-->
+                                <ul class="List">
+                                        <li class="a1">
+                                            <div class="div2">
+                                                    <span class="fas fa-bell ic"></span>
+                                                    <h3 class="item">Notification</h3>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!--*************************************************************-->
+                                    <ul class="List">
+                                            <li class="a1">
+                                                <div class="div2">
+                                                    <span class="fas fa-globe-asia ic"></span>
+                                                        <h3 class="item">RTL Support</h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <!--*************************************************************-->
+                                        <ul class="List">
+                                                <li class="a1">
+                                                    <div class="div2">
+                                                            <span class="fas fa-arrow-alt-circle-down ic"></span>
+                                                            <h3 class="item">Upgrade To PRO</h3>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <!--*************************************************************-->
+        </div>
+            <!--****************start div3**************************-->
+            <Div class="div3">
+                <div class="div31">
+                        
+                    <div class="div3h1">
+                           
+                        <h3 class="dashboard">Dashboard</h3>
+                    </div>
+                    <div class="div3S1">
+                        <input type="search" placeholder="search" class="search">
+                    </div>
+                    
+                    <div class="div3div2">
+                        <div class="div3icon">
+                            <div class="I2">
+                            <span class="fas fa-search IC"></span>
+                           </div>
+                           <div class="I2">
+                            <span class="fas fa-chart-line IC"></span>
+                        </div>
+                        <div class="I2">
+                            <span class="fas fa-bell IC"></span>
+                            </Div>
+                            <div class="I2">
+                            <span class="fas fa-user IC"></span>
+                            </div>
+                            <div class="I2">
+                                    <a href="file:///I:/Second%20year/design/Assignment%20Dashpoard/page1/index%20ltr.html" class="Lang"><h1 class="Lang">AR</h1></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--*****************************************************************-->
+                <Div class="div5">
+                    <div class="div5div1">
+                        <div class="div5first">
+                            <div class="div5second">
+                            <Div class="div5div2">
+                                    <span class="far fa-file-alt ICC"></span>
+                            </Div>
+                      
+                            <p class="space">
+                            Used Space
+                            </p>
+                            <h3 class="Number">
+                                49/50 GB
+                            </h3>
+                            <div class="footerdiv5">
+                                <div class="footdiv2">
+                                        
+                                        <span class="fas fa-exclamation-triangle error"></span>
+                                        <a href="#" class="footlink">Get More Space...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--***************************************-->
+                <div class="div5div1">
+                        <div class="div5first">
+                            <div class="div5second">
+                            <Div class="div5div3">
+                                    <span class="fas fa-store ICC"></span>
+                            </Div>
+                      
+                            <p class="space">
+                            Revenue
+                            </p>
+                            <h3 class="Number">
+                                $34,254
+                            </h3>
+                            <div class="footerdiv5">
+                                <div class="footdiv2">
+                                        <span class="fas fa-calendar-week errors"></span>
+                                        <a href="#" class="footlink">Last 24 Hours</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--***************************************-->
+                <div class="div5div1">
+                        <div class="div5first">
+                            <div class="div5second">
+                            <Div class="div5div4">
+                                    <span class="fas fa-info-circle ICC"></span>
+                            </Div>
+                      
+                            <p class="space">
+                            Fixed Issues
+                            </p>
+                            <h3 class="Number">
+                                75
+                            </h3>
+                            <div class="footerdiv5">
+                                <div class="footdiv2">
+                                        <span class="fas fa-tag errors"></span>
+                                        <a href="#" class="footlink">tracked from Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--***************************************-->
+                <div class="div5div1">
+                        <div class="div5first">
+                            <div class="div5second">
+                            <Div class="div5div5">
+                                    <span class="fab fa-twitter ICC"></span>
+                            </Div>
+                      
+                            <p class="space">
+                            Followers
+                            </p>
+                            <h3 class="Number">
+                               +245
+                            </h3>
+                            <div class="footerdiv5">
+                                <div class="footdiv2">
+                                        <span class="fas fa-history errors"></span>
+                                        <a href="#" class="footlink">Just Updated</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&-->
+            <Div class="div6">
+            <div class="div6div1">
+                <div class="div6first">
+                    <div class="div6second">
+                    <Div class="div6div2">
+                        <div id="curve_chart" style="width: 280px; height: 200px"></div>
+                    </Div>
+                    <div class="title">
+                    <p class="Salary">
+                   Dialy Salary
+                    </p>
+                    <h3 class="Numberrr">
+                      <span class="number">55%</span> increas today sales
+                    </h3>
+                </div>
+                    <div class="footerdiv6">
+                        <div class="footdiv3">
+                                <span class="far fa-clock errors"></span>                            
+                                <a href="#" class="footlink">Update 4 minutes ago</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--***************************************-->
+        <div class="div6div1">
+                <div class="div6first">
+                    <div class="div6second">
+                    <Div class="div6div2">
+                            <div id="chart_div" style="width: 280px; height: 200px;"></div>
+                    </Div>
+                    <div class="title">
+                    <p class="Salary">
+                            Email Subscriptions
+                    </p>
+                    <h3 class="Numberrr">
+                      Last Compaign Performance
+                    </h3>
+                </div>
+                    <div class="footerdiv6">
+                        <div class="footdiv3">
+                                <span class="far fa-clock errors"></span>                            
+                                <a href="#" class="footlink">Compaign sent 2 days ago</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+        <div class="div6div1">
+                <div class="div6first">
+                    <div class="div6second">
+                    <Div class="div6div2">
+                            <div id='polynomial2_div' style='width: 280px; height: 200px;'></div>
+                    </Div>
+                    <div class="title">
+                    <p class="Salary">
+                        Completed Tasks
+                    </p>
+                    <h3 class="Numberrr">
+                      Last Compaign Performance
+                    </h3>
+                </div>
+                    <div class="footerdiv6">
+                        <div class="footdiv3">
+                                <span class="far fa-clock errors"></span>                            
+                                <a href="#" class="footlink">Compaign sent 2 ago</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--***************************************-->
+</Div>
+                    <!--***************************************-->  
+                    
+            </div>
+            </Div>
+    </main>
+</body>
+</html>
